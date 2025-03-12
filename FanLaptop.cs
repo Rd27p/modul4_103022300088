@@ -16,12 +16,13 @@ namespace modul4_103022300088
         {
             Mode_Down, Mode_Up, Turbo_Shortcut
         };
+        public FanState CurrentState = FanState.Quiet;
 
         public class Transition
         {
-            public FanState PrevState { get; }
-            public FanState NextState { get; }
-            public Trigger Trigger { get; }
+            public FanState PrevState;
+            public FanState NextState;
+            public Trigger Trigger;
 
             public Transition(FanState prevState, FanState nextState, Trigger trigger)
             {
@@ -43,7 +44,7 @@ namespace modul4_103022300088
             new Transition(FanState.Turbo, FanState.Quiet, Trigger.Turbo_Shortcut),
         };
 
-        public FanState CurrentState { get; private set; } = FanState.Quiet;
+       
 
         public FanState GetNextState(FanState prevState , Trigger trigger)
         {
@@ -59,6 +60,7 @@ namespace modul4_103022300088
 
         public void ActivateState(Trigger trigger)
         {
+            FanState prevState = CurrentState;
             CurrentState = GetNextState(CurrentState, trigger);
         }
     }

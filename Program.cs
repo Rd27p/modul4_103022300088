@@ -20,22 +20,39 @@ namespace modul4_103022300088
 
             FanLaptop fan = new FanLaptop();
             Console.WriteLine("\nSimulasi Perubahan Fan Laptop");
+
+            Console.Write($"Fan {fan.CurrentState}");
             fan.ActivateState(FanLaptop.Trigger.Mode_Up);
-            Console.WriteLine($"Fan Laptop saat ini: {fan.CurrentState}");
+            Console.WriteLine($" berubah menjadi {fan.CurrentState}");
+
+            Console.Write($"Fan {fan.CurrentState}");
             fan.ActivateState(FanLaptop.Trigger.Mode_Up);
-            Console.WriteLine($"Fan Laptop saat ini: {fan.CurrentState}");
+            Console.WriteLine($" berubah menjadi {fan.CurrentState}");
+
+            Console.Write($"Fan {fan.CurrentState}");
             fan.ActivateState(FanLaptop.Trigger.Mode_Down);
-            Console.WriteLine($"Fan Laptop saat ini: {fan.CurrentState}");
+            Console.WriteLine($" berubah menjadi {fan.CurrentState}");
+
+            Console.Write($"Fan {fan.CurrentState}");
             fan.ActivateState(FanLaptop.Trigger.Mode_Down);
-            Console.WriteLine($"Fan Laptop saat ini: {fan.CurrentState}");
+            Console.WriteLine($" berubah menjadi {fan.CurrentState}");
+
+            Console.Write($"Fan {fan.CurrentState}");
             fan.ActivateState(FanLaptop.Trigger.Turbo_Shortcut);
-            Console.WriteLine($"Fan Laptop saat ini: {fan.CurrentState}");
+            Console.WriteLine($" berubah menjadi {fan.CurrentState}");
+
+            Console.Write($"Fan {fan.CurrentState}");
             fan.ActivateState(FanLaptop.Trigger.Mode_Down);
-            Console.WriteLine($"Fan Laptop saat ini: {fan.CurrentState}");
+            Console.WriteLine($" berubah menjadi {fan.CurrentState}");
+
+            Console.Write($"Fan {fan.CurrentState}");
             fan.ActivateState(FanLaptop.Trigger.Mode_Up);
-            Console.WriteLine($"Fan Laptop saat ini: {fan.CurrentState}");
+            Console.WriteLine($" berubah menjadi {fan.CurrentState}");
+
+            Console.Write($"Fan {fan.CurrentState}");
             fan.ActivateState(FanLaptop.Trigger.Turbo_Shortcut);
-            Console.WriteLine($"Fan Laptop saat ini: {fan.CurrentState}");
+            Console.WriteLine($" berubah menjadi {fan.CurrentState}");
+
         }
     }
 }
